@@ -43,7 +43,7 @@ This device supports OTA updates, for more information see [OTA updates](../guid
 ### Switch 
 The current state of this switch is in the published state under the `state` property (value is `ON` or `OFF`).
 To control this switch publish a message to topic `zigbee2mqtt/FRIENDLY_NAME/set` with payload `{"state": "ON"}`, `{"state": "OFF"}` or `{"state": "TOGGLE"}`.
-To read the current state of this switch publish a message to topic `zigbee2mqtt/FRIENDLY_NAME/get` with payload `{"state": ""}`.
+To read the current state of this switch publish a message to topic `zigbee2mqtt/FRIENDLY_NAME` with payload `{"state": ""}`.
 
 ### Power-on behavior (enum)
 Controls the behavior when the device is powered on after power loss.
